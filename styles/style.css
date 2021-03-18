@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
@@ -79,7 +80,6 @@ header img {
 }
 
 
-
 content {
     width: 80%;
 }
@@ -99,9 +99,9 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -110,10 +110,32 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+        }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
+}
 
-  }
+/* CALCULATOR */
+
+.calc {
+    display: flex;
+    flex-direction: row;
+}
+
+.calc * {
+    margin: 0rem 0.5rem;
+}
+
+.calc .in {
+    width: 3.5rem;
+}
+
+input.in {
+    transition: width 0.3s ease-in-out;
+}
+
+input.in:focus {
+    width: 6rem;
+}
